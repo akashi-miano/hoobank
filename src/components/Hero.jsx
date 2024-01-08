@@ -13,6 +13,7 @@ const Hero = () => {
         <header
           className="mb-8 hero__header flow-content--m md:text-left md:mb-0 hero__header relative before:hidden before:lg:block"
           data-aos="fade-down"
+          data-aos-delay="100"
         >
           <span className="hero__description">
             <span className="text-white hero__discount-amount">20%</span>{" "}
@@ -35,7 +36,12 @@ const Hero = () => {
             annual fees.
           </p>
         </header>
-        <div className="hero__img-wrapper" data-aos="fade-up">
+        <div
+          className="hero__img-wrapper"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="500"
+        >
           <img src={heroImg} alt="" className="w-full lg:w-[85%]" />
         </div>
       </div>
