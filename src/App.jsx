@@ -1,4 +1,6 @@
-import { useState } from "react";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import HandleMoney from "./components/HandleMoney";
@@ -9,8 +11,13 @@ import TryItNow from "./components/TryItNow";
 import Footer from "./components/Footer";
 
 function App() {
-  const [count, setCount] = useState(0);
-
+  useEffect(() => {
+    AOS.init({
+      disable: "phone",
+      duration: 700,
+      easing: "ease-out-cubic",
+    });
+  }, []);
   return (
     <>
       <Navbar />

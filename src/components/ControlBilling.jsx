@@ -6,7 +6,11 @@ const ControlBilling = () => {
   return (
     <section className="py-16">
       <div className="container mx-auto max-w-[1250px] grid md:grid-cols-2 gap-4">
-        <header className="flow-content--m">
+        <header
+          className="flow-content--m"
+          data-aos="fade-right"
+          data-aos-offset="300"
+        >
           <h2 className="text-4xl font-bold leading-normal">
             Easily control your billing & invoicing.
           </h2>
@@ -20,7 +24,11 @@ const ControlBilling = () => {
             <img src={appStoreIcon} alt="" />
           </div>
         </header>
-        <div className="img-wrapper order-[-1]">
+        <div
+          className="img-wrapper order-[-1]"
+          data-aos="fade-left"
+          data-aos-offset="300"
+        >
           <img
             src={sectionImg}
             alt=""

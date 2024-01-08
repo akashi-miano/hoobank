@@ -4,7 +4,11 @@ const BetterCard = () => {
   return (
     <section className="py-16" id="solution">
       <div className="container mx-auto max-w-[1250px] grid md:grid-cols-2 gap-4">
-        <header className="flow-content--m">
+        <header
+          className="flow-content--m"
+          data-aos="fade-right"
+          data-aos-offset="300"
+        >
           <h2 className="text-4xl font-bold leading-normal">
             Find a better card deal in few easy steps.
           </h2>
@@ -16,7 +20,11 @@ const BetterCard = () => {
             Get Started
           </a>
         </header>
-        <div className="img-wrapper order-[-1] md:order-[0] mb-4 md:mb-0">
+        <div
+          className="img-wrapper order-[-1] md:order-[0] mb-4 md:mb-0"
+          data-aos="fade-left"
+          data-aos-offset="300"
+        >
           <img
             src={cardImg}
             alt=""

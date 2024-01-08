@@ -4,7 +4,12 @@ const TryItNow = () => {
   return (
     <section className="py-16">
       <div className="container mx-auto max-w-[1250px]">
-        <div className="content grid md:grid-cols-2 rounded-lg tryItNowBg p-8">
+        <div
+          className="content grid md:grid-cols-2 rounded-lg tryItNowBg p-8"
+          data-aos="zoom-in"
+          data-aos-offset="300"
+          data-aos-delay="900"
+        >
           <header className="flow-content--m">
             <h2 className="text-4xl font-bold text-white leading-normal">
               Let’s try our service now!

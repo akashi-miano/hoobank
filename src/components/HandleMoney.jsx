@@ -6,7 +6,11 @@ const HandleMoney = () => {
   return (
     <section className="py-16" id="feature">
       <div className="container max-w-[1250px] mx-auto grid md:grid-cols-2 gap-4">
-        <header className="flow-content--m mb-4 md:mb-0">
+        <header
+          className="flow-content--m mb-4 md:mb-0"
+          data-aos="fade-right"
+          data-aos-offset="300"
+        >
           <h2 className="text-4xl font-bold leading-normal">
             You do the business,
             <br />
@@ -21,7 +25,11 @@ const HandleMoney = () => {
             Get Started
           </a>
         </header>
-        <div className="cards-wrapper flow-content--m">
+        <div
+          className="cards-wrapper flow-content--m"
+          data-aos="fade-left"
+          data-aos-offset="300"
+        >
           <div className="card flex items-center gap-4 p-4 rounded-[20px] duration-300 cursor-pointer">
             <img
               src={starIcon}

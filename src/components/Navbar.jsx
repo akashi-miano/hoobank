@@ -33,6 +33,14 @@ const Navbar = () => {
               Solution
             </a>
           </li>
+          <li>
+            <a
+              href="#testimonials"
+              className="link hover:text-[#ddd] duration-300"
+            >
+              Testimonials
+            </a>
+          </li>
         </ul>
         <div className="toggle-mobile-nav md:hidden">
           <button onClick={handleNav}>
@@ -81,6 +89,15 @@ const Navbar = () => {
               onClick={handleNav}
             >
               Solution
+            </a>
+          </li>
+          <li>
+            <a
+              href="#testimonials"
+              className="link hover:text-[#ddd] duration-300"
+              onClick={handleNav}
+            >
+              Testimonials
             </a>
           </li>
         </ul>

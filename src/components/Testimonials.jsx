@@ -9,19 +9,38 @@ import binanceImg from "../assets/binance.png";
 
 const Testimonials = () => {
   return (
-    <section>
+    <section id="testimonials">
       <div className="container mx-auto max-w-[1250px]">
         <header className="flow-content--m flex justify-between items-center flex-col md:flex-row md:gap-24 mb-24">
-          <h2 className="text-4xl font-bold leading-normal">
+          <h2
+            className="text-4xl font-bold leading-normal"
+            data-aos="fade-down"
+            data-aos-offset="300"
+            data-aos-delay="300"
+          >
             What people are saying about us
           </h2>
-          <p className="text-primary">
+          <p
+            className="text-primary"
+            data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-delay="500"
+          >
             Everything you need to accept card payments and grow your business
             anywhere on the planet.
           </p>
         </header>
-        <div className="testimonial-wrapper grid lg:grid-cols-3 lg:gap-8 gap-4">
-          <div className="testimonial-card flow-content--m p-4 rounded-xl duration-200 relative min-h-[225px] md:min-h-[250px] flex flex-col justify-center">
+        <div
+          className="testimonial-wrapper grid lg:grid-cols-3 lg:gap-8 gap-4"
+          data-aos="zoom-in"
+          data-aos-offset="300"
+          data-aos-delay="600"
+        >
+          <div
+            className="testimonial-card flow-content--m p-4 rounded-xl duration-200 relative min-h-[225px] md:min-h-[250px] flex flex-col justify-center"
+            data-aos="fade-right"
+            data-aos-offset="300"
+          >
             <img
               src={quotes}
               alt=""
@@ -45,7 +64,7 @@ const Testimonials = () => {
               </div>
             </div>
           </div>
-          <div className="testimonial-card flow-content--m p-4 rounded-xl duration-200 relative min-h-[250px] flex flex-col justify-center p-4">
+          <div className="testimonial-card flow-content--m p-4 rounded-xl duration-200 relative min-h-[250px] flex flex-col justify-center">
             <img
               src={quotes}
               alt=""
@@ -94,7 +113,12 @@ const Testimonials = () => {
             </div>
           </div>
         </div>
-        <div className="companies flex items-center gap-8 justify-center mt-8 flex-col md:flex-row">
+        <div
+          className="companies flex items-center gap-8 justify-center mt-8 flex-col md:flex-row"
+          data-aos="flip-left"
+          data-aos-off0set="800"
+          data-aos-delay="700"
+        >
           <img src={airbnbImg} alt="airbnb" className="max-w-[193px]" />
           <img src={binanceImg} alt="binance" className="max-w-[193px]" />
           <img src={coinBaseImg} alt="coinbase" className="max-w-[193px]" />

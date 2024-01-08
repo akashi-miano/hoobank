@@ -10,7 +10,10 @@ const Hero = () => {
   return (
     <section className="hero py-16 md:py-0" id="about">
       <div className="container mx-auto max-w-[1250px] grid md:grid-cols-2 items-center">
-        <header className="mb-8 hero__header flow-content--m md:text-left md:mb-0 hero__header relative before:hidden before:lg:block">
+        <header
+          className="mb-8 hero__header flow-content--m md:text-left md:mb-0 hero__header relative before:hidden before:lg:block"
+          data-aos="fade-down"
+        >
           <span className="hero__description">
             <span className="text-white hero__discount-amount">20%</span>{" "}
             DISCOUNT FOR{" "}
@@ -32,11 +35,15 @@ const Hero = () => {
             annual fees.
           </p>
         </header>
-        <div className="hero__img-wrapper">
+        <div className="hero__img-wrapper" data-aos="fade-up">
           <img src={heroImg} alt="" className="w-full lg:w-[85%]" />
         </div>
       </div>
-      <div className="hero__features flex flex-col md:flex-row md:items-center justify-center md:justify-between max-w-[1250px] mx-auto container !py-16 gap-8 md:gap-4 text-center">
+      <div
+        className="hero__features flex flex-col md:flex-row md:items-center justify-center md:justify-between max-w-[1250px] mx-auto container !py-16 gap-8 md:gap-4 text-center"
+        data-aos="zoom-in"
+        data-aos-offset="200"
+      >
         <p className="flex items-center gap-4 max-w-[450px] after:content-[''] relative after:h-[14px] after:w-[3px] after:bg-cyan-400 after:hidden after:md:block">
           <ScrollTrigger
             onEnter={() => setCounterOn(true)}
