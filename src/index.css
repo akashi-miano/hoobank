@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+body,html{
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+h1,h2,h3,body{
+    line-height: 1.6;
+}
+
+h1,h2,h3,h4{
+	@apply text-white;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    @apply bg-[#111] text-primary;
+}
+
+.grid{
+	display: grid;
+}
+
+.grid--1x2 {
+	grid-template-columns: repeat(2, minmax(auto, 1fr));
+}
+
+.grid--1x3 {
+	grid-template-columns: repeat(3, minmax(auto, 1fr));
+}
+
+.btn {
+	display: inline-block;
+	border: 0;
+	background: 0;
+	padding: .5em 1.5em;
+	font-size: 1.125rem;
+	font-weight: 700;
+	transition: 250ms;
+}
+
+.btn--primary{
+    background: linear-gradient(157.81deg, #DEF9FA -43.27%, #BEF3F5 -21.24%, #9DEDF0 12.19%, #7DE7EB 29.82%, #5CE1E6 51.94%, #33BBCF 90.29%);
+    color:  rgba(0, 4, 14, 1);
+	font-weight: 500;
+    border-radius: 10px;
+	@apply  hover:bg-none hover:bg-blue-900 duration-300 hover:text-gray-300 ease-in;
+}
+
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2.5rem;
+}
+
+.flow-content--s > * + *  {
+	margin-top: .5rem !important;
+}
+.flow-content--m > * + *  {
+	margin-top: 1rem !important;
+}
+.flow-content--xm > * + *  {
+	margin-top: 1.5rem !important;
+}
+.flow-content--l > * + *  {
+	margin-top: 3rem !important;
+}
+.flow-content--xl > * + *  {
+	margin-top: 3.5rem !important;
+}
+
+.special{
+    background: radial-gradient(64.18% 64.18% at 71.16% 35.69%, #DEF9FA 0.89%, #BEF3F5 17.23%, #9DEDF0 42.04%, #7DE7EB 55.12%, #5CE1E6 71.54%, #33BBCF 100%); 
+      -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hero__description{
+    background: linear-gradient(125.17deg, #272727 0%, #11101D 100%);
+    @apply p-2 uppercase rounded-md;
+}
+
+.hero{
+    min-height: calc(100vh - 150px);
+}
+
+.hero__header::before{
+	content: '';
+	background-image: url("./assets/started.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	width:  140px;
+	height: 140px;
+	border-radius: 50%;
+	position: absolute;
+	right: 0;
+	bottom: 50%;
+	transform: translateX(15px);
+	@apply hidden md:block;
+}
+
+.card:hover {
+	background: linear-gradient(144.39deg, #FFFFFF -278.56%, #6D6D6D -78.47%, #11101D 91.61%);
+}
+.testimonial-card {
+	@apply duration-300 overflow-hidden;
+}
+
+.testimonial-card:hover{
+	background: linear-gradient(144.39deg, #FFFFFF -278.56%, #6D6D6D -78.47%, #11101D 91.61%);
+	@apply cursor-pointer;
+}
+
+
+.testimonial-card p{
+	@apply max-w-[450px];
+}
+
+.tryItNowBg{
+	background: linear-gradient(144.39deg, #FFFFFF -278.56%, #6D6D6D -78.47%, #11101D 91.61%);
+}
+
+.footer__link{
+	@apply hover:text-primary duration-300;
+}
+
+@media screen  and (max-width: 550px){
+	html {
+		font-size: 65%;
+	}
+}
